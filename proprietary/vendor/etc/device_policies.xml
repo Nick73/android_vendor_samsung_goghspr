@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<policies>
+<admin name="com.nttdocomo.android.remotelock/com.nttdocomo.android.remotelock.DmDeviceAdminReceiver">
+<policies flags="13" />
+<attachments-enabled value="true" />
+<max-attachment-size value="0" />
+<allow-storage-card value="true" />
+<allow-camera value="true" />
+<allow-wifi value="true" />
+<allow-text-messaging value="true" />
+<allow-popimap-email value="true" />
+<allow-html-email value="true" />
+<allow-browser value="true" />
+<allow-internet-sharing value="true" />
+<require-manual-sync-roaming value="false" />
+<allow-bluetooth-mode value="2" />
+<max-calendar-age value="0" />
+<max-email-age value="0" />
+<max-email-body-trunc-size value="0" />
+<max-email-html-body-trunc-size value="0" />
+<require-Signed-SMIME-Messages value="false" />
+<require-Encrypted-SMIME-Messages value="false" />
+<require-Signed-SMIME-Algorithm value="false" />
+<require-Encryption-SMIME-Algorithm value="false" />
+<allow-SMIME-Encryption-Algorithm-Negotiation value="true" />
+<allow-SMIME-Soft-Certs value="true" />
+<allow-Desktop-Sync value="true" />
+<allow-IrDA value="true" />
+<require-Device-Encryption value="false" />
+<require-StorageCard-Encryption value="false" />
+</admin>
+</policies>
