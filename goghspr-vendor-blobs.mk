@@ -213,5 +213,12 @@ PRODUCT_COPY_FILES += \
     
 PRODUCT_COPY_FILES += \
     vendor/samsung/goghspr/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so
+    
+PRODUCT_COPY_FILES += \
+    vendor/samsung/goghspr/proprietary/etc/OperatorPolicy.xml:system/etc/OperatorPolicy.xml \
+#    vendor/samsung/goghspr/proprietary/etc/quipc.conf:system/etc/quipc.conf \
+    vendor/samsung/goghspr/proprietary/etc/thermald.conf:system/etc/thermald.conf \
+    vendor/samsung/goghspr/proprietary/etc/UserPolicy.xml:system/etc/UserPolicy.xml \
+	vendor/samsung/goghspr/proprietary/etc/DxHDCP.cfg:system/etc/DxHDCP.cfg
 
  #   vendor/samsung/goghspr/proprietary/bin/netd:system/bin/netd \
