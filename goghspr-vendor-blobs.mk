@@ -28,7 +28,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/goghspr/proprietary/bin/ccid_daemon:system/bin/ccid_daemon \
     vendor/samsung/goghspr/proprietary/bin/cnd:system/bin/cnd \
     vendor/samsung/goghspr/proprietary/bin/connfwexe:system/bin/connfwexe \
-    vendor/samsung/goghspr/proprietary/bin/curl:system/bin/curl \
     vendor/samsung/goghspr/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
     vendor/samsung/goghspr/proprietary/bin/ddexe:system/bin/ddexe \
     vendor/samsung/goghspr/proprietary/bin/dttexe:system/bin/dttexe \
@@ -89,8 +88,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/goghspr/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/goghspr/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
     vendor/samsung/goghspr/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
-    vendor/samsung/goghspr/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
+#    vendor/samsung/goghspr/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
     vendor/samsung/goghspr/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
     vendor/samsung/goghspr/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
     vendor/samsung/goghspr/proprietary/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
@@ -133,9 +133,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/goghspr/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
     vendor/samsung/goghspr/proprietary/lib/libfrsdk.so:system/lib/libfrsdk.so \
     vendor/samsung/goghspr/proprietary/lib/libgemini.so:system/lib/libgemini.so \
-    vendor/samsung/goghspr/proprietary/lib/libGLESv1_CM.so:system/lib/libGLESv1_CM.so \
+#    vendor/samsung/goghspr/proprietary/lib/libGLESv1_CM.so:system/lib/libGLESv1_CM.so \
     vendor/samsung/goghspr/proprietary/lib/libGLESv2_dbg.so:system/lib/libGLESv2_dbg.so \
-    vendor/samsung/goghspr/proprietary/lib/libGLESv2.so:system/lib/libGLESv2.so \
+#    vendor/samsung/goghspr/proprietary/lib/libGLESv2.so:system/lib/libGLESv2.so \
     vendor/samsung/goghspr/proprietary/lib/libgps.so:system/lib/libgps.so \
     vendor/samsung/goghspr/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/samsung/goghspr/proprietary/lib/libgsl.so:system/lib/libgsl.so \
@@ -216,9 +216,19 @@ PRODUCT_COPY_FILES += \
     
 PRODUCT_COPY_FILES += \
     vendor/samsung/goghspr/proprietary/etc/OperatorPolicy.xml:system/etc/OperatorPolicy.xml \
-#    vendor/samsung/goghspr/proprietary/etc/quipc.conf:system/etc/quipc.conf \
+    vendor/samsung/goghspr/proprietary/etc/quipc.conf:system/etc/quipc.conf \
     vendor/samsung/goghspr/proprietary/etc/thermald.conf:system/etc/thermald.conf \
     vendor/samsung/goghspr/proprietary/etc/UserPolicy.xml:system/etc/UserPolicy.xml \
-	vendor/samsung/goghspr/proprietary/etc/DxHDCP.cfg:system/etc/DxHDCP.cfg
+	vendor/samsung/goghspr/proprietary/etc/DxHDCP.cfg:system/etc/DxHDCP.cfg \
+	vendor/samsung/goghspr/proprietary/etc/wifi/hostapd_default.conf:system/etc/wifi/hostapd_default.conf
 
+PRODUCT_PACKAGES += \
+	libxt_native.so \
+	libwiperjni.so \
+	wiperiface \
+	wlan.ko \
+	cfg80211.ko
+	
+	
+	
  #   vendor/samsung/goghspr/proprietary/bin/netd:system/bin/netd \
