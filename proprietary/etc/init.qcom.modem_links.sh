@@ -1,5 +1,5 @@
 #!/system/bin/sh
-# Copyright (c) 2011, Code Aurora Forum. All rights reserved.
+# Copyright (c) 2011-2012, Code Aurora Forum. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -38,7 +38,7 @@ cd /firmware/image
 # Get the list of files in /firmware/image
 # for which sym links have to be created
 
-fwfiles=`ls modem* q6* wcnss* dsps* tzapps*`
+fwfiles=`ls modem* q6* wcnss* dsps* tzapps* gss* sshdcpap* vidc*`
 modem_fwfiles=`ls modem_fw.mdt`
 
 # Check if the links with similar names
@@ -47,6 +47,9 @@ modem_fwfiles=`ls modem_fw.mdt`
 cd /system/etc/firmware
 linksNeeded=0
 fixModemFirmware=0
+
+# Remove files not used anymore.
+rm /system/etc/firmware/dxhdcp2*
 
 # For everyfile in fwfiles check if
 # the corresponding file exists
@@ -82,11 +85,9 @@ case `ls $modem_fwfiles` in
       break;;
 esac
 
-# if links are needed mount the FS as read write
 case $linksNeeded in
    1)
       cd /firmware/image
-      mount -t ext4 -o remount,rw,barrier=0 /dev/block/mmcblk0p14 /system
 
       # Check if need to select modem firmware and do rename in first boot
       case $fixModemFirmware in
@@ -164,18 +165,39 @@ case $linksNeeded in
             log -p w -t PIL 8960 device but no tzapps image found;;
       esac
 
-      case `ls dxhdcp2.mdt 2>/dev/null` in
-         dxhdcp2.mdt)
-            for imgfile in dxhdcp2*; do
+      case `ls gss.mdt 2>/dev/null` in
+         gss.mdt)
+            for imgfile in gss*; do
                ln -s /firmware/image/$imgfile /system/etc/firmware/$imgfile 2>/dev/null
             done
             break;;
          *)
-            log -p w -t PIL 8960 device but no dxhdcp2 image found;;
+            log -p w -t No gss image found;;
       esac
-      
-      #remount file system as read only
-      mount -t ext4 -o remount,ro,barrier=0 /dev/block/mmcblk0p14 /system
+
+      case `ls sshdcpap.mdt 2>/dev/null` in
+         sshdcpap.mdt)
+            ln -s /firmware/image/sshdcpap.mdt /system/etc/firmware/sshdcpapp.mdt 2>/dev/null
+            ln -s /firmware/image/sshdcpap.b00 /system/etc/firmware/sshdcpapp.b00 2>/dev/null
+            ln -s /firmware/image/sshdcpap.b01 /system/etc/firmware/sshdcpapp.b01 2>/dev/null
+            ln -s /firmware/image/sshdcpap.b02 /system/etc/firmware/sshdcpapp.b02 2>/dev/null
+            ln -s /firmware/image/sshdcpap.b03 /system/etc/firmware/sshdcpapp.b03 2>/dev/null
+            break;;
+         *)
+            log -p w -t PIL 8960 device but no sshdcpapp image found;;
+      esac
+
+      case `ls vidc.mdt 2>/dev/null` in
+         vidc.mdt)
+            ln -s /firmware/image/vidc.mdt /system/etc/firmware/vidc.mdt 2>/dev/null
+            ln -s /firmware/image/vidc.b00 /system/etc/firmware/vidc.b00 2>/dev/null
+            ln -s /firmware/image/vidc.b01 /system/etc/firmware/vidc.b01 2>/dev/null
+            ln -s /firmware/image/vidc.b02 /system/etc/firmware/vidc.b02 2>/dev/null
+            ln -s /firmware/image/vidc.b03 /system/etc/firmware/vidc.b03 2>/dev/null
+            break;;
+         *)
+            log -p w -t PIL 8960 device but no vidc image found;;
+      esac
       break;;
 
    *)

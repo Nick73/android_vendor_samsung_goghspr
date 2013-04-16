@@ -25,7 +25,9 @@ jhwan.kim@hdlnc.com  -->
 <!-- Common -->
 <CscFeature_Common_MyPhonebookBrandName></CscFeature_Common_MyPhonebookBrandName>
 <CscFeature_Common_EnableMobileOfficeMdm>false</CscFeature_Common_EnableMobileOfficeMdm>
-
+<CscFeature_Common_AddPrefix4InternationalCall></CscFeature_Common_AddPrefix4InternationalCall>
+<CscFeature_Common_AllowExternalApkUsage>false</CscFeature_Common_AllowExternalApkUsage>
+ 
 <!-- SyncML -->
 <CscFeature_SyncML_MyPhonebookISD></CscFeature_SyncML_MyPhonebookISD>
 <CscFeature_SyncML_EnableLimitationDeltaSizeViaMobileNet>-1</CscFeature_SyncML_EnableLimitationDeltaSizeViaMobileNet>
@@ -124,6 +126,7 @@ jhwan.kim@hdlnc.com  -->
 <!-- New Calendar -->
 <CscFeature_Calendar_EnableLocalHolidayDisplay>NONE</CscFeature_Calendar_EnableLocalHolidayDisplay>
 <CscFeature_Calendar_SetColorOfDays>XXXXXXR</CscFeature_Calendar_SetColorOfDays>
+<CscFeature_Calender_EnableWeatherInfo>false</CscFeature_Calender_EnableWeatherInfo>
 
 <!-- Call -->
 <CscFeature_VoiceCall_EnableSSC>false</CscFeature_VoiceCall_EnableSSC>
@@ -149,7 +152,9 @@ jhwan.kim@hdlnc.com  -->
 <CscFeature_RIL_CallerIdMatchingDigit>-1</CscFeature_RIL_CallerIdMatchingDigit>
 <CscFeature_RIL_DisablePromptPopup4SIMProfileSelection>false</CscFeature_RIL_DisablePromptPopup4SIMProfileSelection>
 <CscFeature_RIL_PDPRetryMechanism4>NONE</CscFeature_RIL_PDPRetryMechanism4>
-
+<CscFeature_RIL_Enable2DigitCall>true</CscFeature_RIL_Enable2DigitCall>
+<CscFeature_RIL_EnableRoamingIcon4NationalRoaming>false</CscFeature_RIL_EnableRoamingIcon4NationalRoaming>
+<CscFeature_RIL_ControlFakeRoamingNRP2G>false</CscFeature_RIL_ControlFakeRoamingNRP2G>
 <!-- Settings -->
 <CscFeature_Settings_FindMyMobile>true</CscFeature_Settings_FindMyMobile>
 <CscFeature_Setting_EnableSimChangeAlertOnly4FindMobile>false</CscFeature_Setting_EnableSimChangeAlertOnly4FindMobile>
@@ -165,7 +170,7 @@ jhwan.kim@hdlnc.com  -->
 <CscFeature_Music_DisableFindTag>false</CscFeature_Music_DisableFindTag>
 <CscFeature_Music_SupportChinaMusicHub>false</CscFeature_Music_SupportChinaMusicHub>
 <CscFeature_Music_TranslateUnknownTitle>false</CscFeature_Music_TranslateUnknownTitle>
-
+<CscFeature_Music_DisableSelectableMusichubLink>false</CscFeature_Music_DisableSelectableMusichubLink>
 
 <!-- VoiceRecorder -->
 
@@ -214,6 +219,10 @@ jhwan.kim@hdlnc.com  -->
 <CscFeature_Framework_EnableLinuxCommonApi4>NONE</CscFeature_Framework_EnableLinuxCommonApi4>
 
 <!-- Streaming -->
+<CscFeature_Streaming_SupportMultiAPN>false</CscFeature_Streaming_SupportMultiAPN>
+<CscFeature_Streaming_AddCommandCondition4MusicholicApp>false</CscFeature_Streaming_AddCommandCondition4MusicholicApp>
+<CscFeature_Streaming_DrivingTestTunning4></CscFeature_Streaming_DrivingTestTunning4>
+<CscFeature_Streaming_ReduceTimeSwitchingTcp4></CscFeature_Streaming_ReduceTimeSwitchingTcp4>
 
 <!-- IMS -->
 
@@ -229,6 +238,10 @@ jhwan.kim@hdlnc.com  -->
 <!-- SEC Launcher -->
 
 <!-- Voice Talk -->
+
+<!-- SPenGesturePad -->
+<CscFeature_SPenGesturePad_UseSearchEngine>false</CscFeature_SPenGesturePad_UseSearchEngine>
+
 
 </FeatureSet>
 </SamsungMobileFeature>

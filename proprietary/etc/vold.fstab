@@ -43,47 +43,47 @@
 {
 	supported_exfat = yes
 }
-dev_mount sdcard /mnt/extSdCard auto /devices/platform/msm_sdcc.3/mmc_host/mmc1/
+dev_mount sdcard /storage/extSdCard auto /devices/platform/msm_sdcc.3/mmc_host/mmc1/
 
 #usb host device 
 {
 	media_type = usb
 	supported_exfat = yes
 }
-dev_mount sda /mnt/UsbDriveA auto /devices/platform/msm_hsusb_host/usb
+dev_mount sda /storage/UsbDriveA auto /devices/platform/msm_hsusb_host/usb
 
 #usb host device 
 {
 	media_type = usb
 	supported_exfat = yes
 }
-dev_mount sdb /mnt/UsbDriveB auto /devices/platform/msm_hsusb_host/usb
+dev_mount sdb /storage/UsbDriveB auto /devices/platform/msm_hsusb_host/usb
 
 #usb host device 
 {
 	media_type = usb
 	supported_exfat = yes
 }
-dev_mount sdc /mnt/UsbDriveC auto /devices/platform/msm_hsusb_host/usb
+dev_mount sdc /storage/UsbDriveC auto /devices/platform/msm_hsusb_host/usb
 
 #usb host device 
 {
 	media_type = usb
 	supported_exfat = yes
 }
-dev_mount sdd /mnt/UsbDriveD auto /devices/platform/msm_hsusb_host/usb
+dev_mount sdd /storage/UsbDriveD auto /devices/platform/msm_hsusb_host/usb
 
 #usb host device 
 {
 	media_type = usb
 	supported_exfat = yes
 }
-dev_mount sde /mnt/UsbDriveE auto /devices/platform/msm_hsusb_host/usb
+dev_mount sde /storage/UsbDriveE auto /devices/platform/msm_hsusb_host/usb
 
 #usb host device 
 {
 	media_type = usb
 	supported_exfat = yes
 }
-dev_mount sdf /mnt/UsbDriveF auto /devices/platform/msm_hsusb_host/usb
+dev_mount sdf /storage/UsbDriveF auto /devices/platform/msm_hsusb_host/usb
 #EOF

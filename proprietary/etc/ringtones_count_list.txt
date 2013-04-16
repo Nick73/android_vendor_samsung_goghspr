@@ -29,3 +29,5 @@
 /system/media/audio/ringtones/05_Bugs_story.ogg
 /system/media/audio/ringtones/09_Underwater_world.ogg
 /system/media/audio/ringtones/04_Blowing_dandelion_seeds.ogg
+/system/media/audio/ringtones/Beep-beep.ogg
+/system/media/audio/ringtones/Beep_once.ogg

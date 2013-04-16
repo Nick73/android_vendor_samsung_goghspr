@@ -19,11 +19,9 @@ alias la='l -a'
 alias ll='l -l'
 alias lo='l -a -l'
 
-bb=/data/busybox/busybox
-
-for p in ~/.bin ${bb%/*}; do
+for p in ~/.bin; do
 	[[ -d $p/. ]] || continue
-	[[ :$PATH: = *:$p:* ]] || PATH=$PATH:$p
+	[[ :$PATH: = *:$p:* ]] || PATH=$p:$PATH
 done
 
 unset p
