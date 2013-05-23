@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/goghspr/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
     vendor/samsung/goghspr/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
     vendor/samsung/goghspr/proprietary/bin/btnvtool:system/bin/btnvtool \
-    vendor/samsung/goghspr/proprietary/bin/bugmailer.sh:system/bin/bugmailer.sh \
     vendor/samsung/goghspr/proprietary/bin/geomagneticd:system/bin/geomagneticd \
     vendor/samsung/goghspr/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/samsung/goghspr/proprietary/bin/immvibed:system/bin/immvibed \
@@ -52,17 +51,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/goghspr/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt \
     vendor/samsung/goghspr/proprietary/etc/firmware/wlan/prima/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     vendor/samsung/goghspr/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
-    vendor/samsung/goghspr/proprietary/lib/hw/alsa.msm8960.so:system/lib/hw/alsa.msm8960.so \
-    vendor/samsung/goghspr/proprietary/lib/hw/camera.msm8960.so:system/lib/hw/camera.msm8960.so \
-    vendor/samsung/goghspr/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
-    vendor/samsung/goghspr/proprietary/lib/hw/nfc.MSM8960.so:system/lib/hw/nfc.MSM8960.so \
-    vendor/samsung/goghspr/proprietary/lib/hw/power.default.so:system/lib/hw/power.default.so \
-    vendor/samsung/goghspr/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
+    vendor/samsung/goghspr/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
     vendor/samsung/goghspr/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
     vendor/samsung/goghspr/proprietary/lib/libatparser.so:system/lib/libatparser.so \
     vendor/samsung/goghspr/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
     vendor/samsung/goghspr/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
-    vendor/samsung/goghspr/proprietary/lib/libbson.so:system/lib/libbson.so \
     vendor/samsung/goghspr/proprietary/lib/libchromatix_imx074_default_video.so:system/lib/libchromatix_imx074_default_video.so \
     vendor/samsung/goghspr/proprietary/lib/libchromatix_imx074_preview.so:system/lib/libchromatix_imx074_preview.so \
     vendor/samsung/goghspr/proprietary/lib/libchromatix_imx074_video_hd.so:system/lib/libchromatix_imx074_video_hd.so \
@@ -82,22 +75,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/goghspr/proprietary/lib/libdiag.so:system/lib/libdiag.so \
     vendor/samsung/goghspr/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
     vendor/samsung/goghspr/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
-    vendor/samsung/goghspr/proprietary/lib/libexifa.so:system/lib/libexifa.so \
-    vendor/samsung/goghspr/proprietary/lib/libFFTEm.so:system/lib/libFFTEm.so \
-    vendor/samsung/goghspr/proprietary/lib/libfilterfw.so:system/lib/libfilterfw.so \
-    vendor/samsung/goghspr/proprietary/lib/libfilterpack_imageproc.so:system/lib/libfilterpack_imageproc.so \
     vendor/samsung/goghspr/proprietary/lib/libgemini.so:system/lib/libgemini.so \
     vendor/samsung/goghspr/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/samsung/goghspr/proprietary/lib/libidl.so:system/lib/libidl.so \
     vendor/samsung/goghspr/proprietary/lib/libimage-jpeg-enc-omx-comp.so:system/lib/libimage-jpeg-enc-omx-comp.so \
+    vendor/samsung/goghspr/proprietary/lib/libimage-jpeg-dec-omx-comp.so:system/lib/libimage-jpeg-dec-omx-comp.so \
     vendor/samsung/goghspr/proprietary/lib/libimage-omx-common.so:system/lib/libimage-omx-common.so \
-    vendor/samsung/goghspr/proprietary/lib/libkeystore_client.so:system/lib/libkeystore_client.so \
-    vendor/samsung/goghspr/proprietary/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
-    vendor/samsung/goghspr/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/samsung/goghspr/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
-    vendor/samsung/goghspr/proprietary/lib/libmmcamera_faceproc.so:system/lib/libmmcamera_faceproc.so \
-    vendor/samsung/goghspr/proprietary/lib/libmmcamera_frameproc.so:system/lib/libmmcamera_frameproc.so \
-    vendor/samsung/goghspr/proprietary/lib/libmmcamera_statsproc30.so:system/lib/libmmcamera_statsproc30.so \
     vendor/samsung/goghspr/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/samsung/goghspr/proprietary/lib/libmmmpod.so:system/lib/libmmmpod.so \
     vendor/samsung/goghspr/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
@@ -135,18 +118,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/goghspr/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
     vendor/samsung/goghspr/proprietary/lib/libwiperjni_v02.so:system/lib/libwiperjni_v02.so \
     vendor/samsung/goghspr/proprietary/lib/libwiperjni.so:system/lib/libwiperjni.so \
-    vendor/samsung/goghspr/proprietary/lib/libwvdrm_L3.so:system/lib/libwvdrm_L3.so \
-    vendor/samsung/goghspr/proprietary/lib/libwvm.so:system/lib/libwvm.so \
-    vendor/samsung/goghspr/proprietary/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
-    vendor/samsung/goghspr/proprietary/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
     vendor/samsung/goghspr/proprietary/lib/libxt_native.so:system/lib/libxt_native.so \
     vendor/samsung/goghspr/proprietary/lib/libxt_v02.so:system/lib/libxt_v02.so \
     vendor/samsung/goghspr/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
     vendor/samsung/goghspr/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
     vendor/samsung/goghspr/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
     vendor/samsung/goghspr/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
-    vendor/samsung/goghspr/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
-    vendor/samsung/goghspr/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
     vendor/samsung/goghspr/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
     vendor/samsung/goghspr/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
     vendor/samsung/goghspr/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
@@ -157,15 +134,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/goghspr/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
     vendor/samsung/goghspr/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
     vendor/samsung/goghspr/proprietary/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
-    vendor/samsung/goghspr/proprietary/lib/egl/libplayback_adreno200.so:system/lib/egl/libplayback_adreno200.so \
     vendor/samsung/goghspr/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
-    vendor/samsung/goghspr/proprietary/lib/libc2d2_a3xx.so:system/lib/libc2d2_a3xx.so \
     vendor/samsung/goghspr/proprietary/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
     vendor/samsung/goghspr/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
-    vendor/samsung/goghspr/proprietary/lib/libCB.so:system/lib/libCB.so \
     vendor/samsung/goghspr/proprietary/lib/libgsl.so:system/lib/libgsl.so \
-    vendor/samsung/goghspr/proprietary/lib/libllvm-a3xx.so:system/lib/libllvm-a3xx.so \
-    vendor/samsung/goghspr/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
     vendor/samsung/goghspr/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
     vendor/samsung/goghspr/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
     vendor/samsung/goghspr/proprietary/lib/libsc-a3xx.so:system/lib/libsc-a3xx.so
