@@ -541,9 +541,15 @@
 			</FileFormat>
 		</Movie>
 
-		<!-- U1 not support <Playlist> <DefaultFolder> <Internal value="/Playlists"/> 
-			<External value="/Playlists"/> </DefaultFolder> <FileFormat> <PLA/> </FileFormat> 
-			</Playlist> -->
+		<Playlist>
+			<DefaultFolder>
+				<Internal value="/Playlists"/>
+			</DefaultFolder>
+			<FileFormat>
+				<PLA/>
+			</FileFormat> 
+		</Playlist>
+
 		<!-- U1 not support <Ebook> <DefaultFolder> <Internal value="/Ebook/download;/Ebook/import" 
 			/> <External value="/Ebook/download;/Ebook/import"/> </DefaultFolder> <FileFormat> 
 			<EPUB> <Version value="1.0"/> <MaxFileSize value=""/> </EPUB> <PDF> <Version 
@@ -555,11 +561,11 @@
 			<Content name="Calendar" Type="Custom" version="2.0"
 				supportVersion="2.0" Detail="Appointment" />
 			<Content name="Message" Type="Custom" version="2.0"
-				supportVersion="2.0">
+				supportVersion="2.0" RestoreReboot="true">
 				<TargetFilePath value="System:\BR\Message.bk" />
 			</Content>			
-			<Content name="Memo" Type="Custom" version="2.0"
-				supportVersion="2.0" /> 
+			<!-- 	<Content name="Memo" Type="Custom" version="2.0"
+				supportVersion="2.0" /> -->
 			<Content name="Task" Type="Custom" version="2.0"
 				supportVersion="2.0" /> 
 			<!-- m0xx minidiary removed. 	
@@ -609,12 +615,12 @@
 				supportVersion="2.0" Detail="Wallpaper;Ringtone;ETC">
 				<TargetFilePath value="System:\BR\Configuration.bk" />
 			</Content>
-<!-- RM Radio not support
+
 			<Content name="Network" Type="Device" version="2.0"
-				supportVersion="2.0" Detail="Radio;Bookmark">
+				supportVersion="2.0" Detail="Bookmark">
 				<TargetFilePath value="System:\BR\Network.bk" />
 			</Content>
--->
+
 			<Content name="Email" Type="Device" version="2.0"
 				supportVersion="2.0" Detail="Account;Settings">
 				<TargetFilePath value="System:\BR\Email.bk" />
